@@ -6,6 +6,11 @@ html {
   line-height: 300px;
 }
 
+img {
+  width: 300px;
+  height: auto;
+}
+
 /* #left-box {
   background-color: rgb(228, 228, 228);
 }
@@ -25,5 +30,10 @@ html {
   margin: auto;
   height: 800px !important;
   width: 800px !important;
-  background-color: aqua;
+  background-color: rgb(166, 213, 213);
+  box-shadow: 3px 3px 3px 3px rgb(114, 114, 114);
+}
+
+.project-tile {
+  margin: 30px;
 }
