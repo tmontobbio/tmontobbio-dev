@@ -1,31 +1,40 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-export default function Nav(){
-    return (
-        <div id="nav">
-            <ul>
-              <Link to="/">
-                <li>
-                  Home
-                </li>
-              </Link>
-              <Link to="/about">
-                <li>
-                  About
-                </li>
-              </Link>
-              <Link to="/projects">
-                <li>
-                  Projects
-                </li>
-              </Link>
-              <Link to="/contact">
-                <li>
-                  Contact
-                </li>
-              </Link>
-            </ul>
-          </div>
-    )
+export default function Nav() {
+
+  const linkStyle = ({ isActive }) => {
+    return {
+      fontWeight: isActive ? 'bold' : 'normal',
+      fontSize: isActive ? '40px' : '20px',
+      // textDecoration: isActive ? 'underline' : 'none',
+    }
+  }
+
+  return (
+    <div id="nav">
+      <ul>
+        <NavLink to="/" style={linkStyle}>
+          <li>
+            Home
+          </li>
+        </NavLink>
+        <NavLink to="/about" style={linkStyle}>
+          <li>
+            About
+          </li>
+        </NavLink>
+        <NavLink to="/projects" style={linkStyle}>
+          <li>
+            Projects
+          </li>
+        </NavLink>
+        <NavLink to="/contact" style={linkStyle}>
+          <li>
+            Contact
+          </li>
+        </NavLink>
+      </ul>
+    </div>
+  )
 }

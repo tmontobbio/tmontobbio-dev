@@ -1,5 +1,9 @@
 import React from "react";
 
-export default function About(){
-    return <>About</>
+export default function About() {
+    return (
+        <div className="child">
+            About
+        </div>
+    )
 }

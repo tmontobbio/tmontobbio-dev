@@ -1,5 +1,9 @@
 import React from "react";
 
-export default function Contact(){
-    return <>Contact</>
+export default function Contact() {
+    return (
+        <div className="child">
+            Contact
+        </div>
+    )
 }
