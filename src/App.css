@@ -1,39 +1,76 @@
 html {
-  background-image: url("/src/img/background.png");
-  background-repeat: vertical;
-  background-size: cover;
-  text-align: center;
-  line-height: 300px;
+  background-image: url("./components/img/black-geo.jpg");
+  color: white;
 }
 
-img {
+h1 {
+  font-size: 60px;
+  font-family: 'Rajdhani', sans-serif;
+  margin: 25px 0px 0px 37px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+
+a:visited {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+
+a:hover {
+  text-decoration: none;
+}
+
+
+a:active {
+  text-decoration: none;
+}
+
+.project-tile {
+  margin: auto;
+}
+
+.project-img {
   width: 300px;
   height: auto;
+  margin: auto;
 }
 
-/* #left-box {
-  background-color: rgb(228, 228, 228);
-}
-
-#right-box {
-  background-color: rgb(203, 187, 165);
-} */
-
-#main-container {
+#content {
+  height: 90%;
+  width: 90%;
+  background-color: rgba(0, 0, 0, 0.759);
   position: absolute;
+  margin: auto;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  display: inline-block;
-  vertical-align: middle;
-  margin: auto;
-  height: 800px !important;
-  width: 800px !important;
-  background-color: rgb(166, 213, 213);
-  box-shadow: 3px 3px 3px 3px rgb(114, 114, 114);
+  /* box-shadow: 3px 3px 3px 3px rgb(114, 114, 114); */
+  border: 1px solid white;
+  display: grid;
+  grid-template-columns: 300px auto 275px;
+  grid-template-rows: 175px auto 200px;
 }
 
-.project-tile {
-  margin: 30px;
+#header {
+  width: 275px;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+#nav {
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 1;
 }
