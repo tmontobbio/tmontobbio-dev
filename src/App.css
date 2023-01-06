@@ -11,8 +11,6 @@ h1 {
 
 ul {
   list-style-type: none;
-  font-family: 'Nova Square', cursive;
-  font-size: 20px;
 }
 
 a:visited,
@@ -39,9 +37,39 @@ a:link {
   margin: auto;
 }
 
+
+.contact-icon {
+  height: 25px;
+  width: 25px;
+}
+
+.contact-icon:hover {
+  height: 50px;
+  width: 50px;
+}
+
+.con-sel:hover {
+  font-size: 60px;
+  color: red;
+}
+
+.nav-sel:hover {
+  font-size: 40px;
+  color: red;
+}
+
+#nav-list {
+  font-family: 'Nova Square', cursive;
+  font-size: 20px;
+}
+
+#contact-list {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 35px;
+}
+
 #content {
-  height: 90%;
-  width: 90%;
+
   background-color: rgba(0, 0, 0, 0.759);
   position: absolute;
   margin: auto;
@@ -50,7 +78,10 @@ a:link {
   right: 0;
   bottom: 0;
   border: 1px solid white;
+  height: 90%;
+  width: 90%;
   display: grid;
+  gap: 10px;
   grid-template-columns: 300px auto 300px;
   grid-template-rows: 175px auto 175px;
 }
@@ -73,4 +104,46 @@ a:link {
 
 #home {
   font-size: 200px;
+}
+
+#about {
+  display: grid;
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+
+.about-img {
+  width: 100%;
+  height: 100%;
+}
+
+#about-img-1 {
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+#about-img-2 {
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+#about-img-3 {
+  grid-row-start: 3;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+#about-img-4 {
+  grid-row-start: 4;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 2;
 }

@@ -6,31 +6,31 @@ export default function Nav() {
   const linkStyle = ({ isActive }) => {
     return {
       fontWeight: isActive ? 'bold' : 'normal',
-      fontSize: isActive ? '40px' : '20px',
+      fontSize: isActive ? '30px' : '20px',
       // textDecoration: isActive ? 'underline' : 'none',
     }
   }
 
   return (
     <div id="nav">
-      <ul>
+      <ul id="nav-list">
         <NavLink to="/" style={linkStyle}>
-          <li>
+          <li className="nav-sel">
             Home
           </li>
         </NavLink>
         <NavLink to="/about" style={linkStyle}>
-          <li>
+          <li className="nav-sel">
             About
           </li>
         </NavLink>
         <NavLink to="/projects" style={linkStyle}>
-          <li>
+          <li className="nav-sel">
             Projects
-          </li>
+          </li >
         </NavLink>
         <NavLink to="/contact" style={linkStyle}>
-          <li>
+          <li className="nav-sel">
             Contact
           </li>
         </NavLink>
