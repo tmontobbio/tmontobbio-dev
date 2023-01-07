@@ -1,4 +1,6 @@
 import './App.css';
+import { motion } from 'framer-motion'
+import { useEffect, useState } from 'react'
 import Nav from './components/Nav';
 import About from './components/About';
 import Projects from './components/Projects';
@@ -7,6 +9,36 @@ import Home from './components/Home';
 import { Routes, Route } from 'react-router-dom';
 
 export default function App() {
+
+  const [mousePosition, setMousePosition] = useState({
+    x: 0,
+    y: 0,
+  })
+
+  const [cursorVariant, setCursorVariant] = useState('default')
+
+  useEffect(() => {
+    const mouseMove = (e) => {
+      setMousePosition({
+        x: e.clientX,
+        y: e.clientY
+      })
+    }
+
+    window.addEventListener("mousemove", mouseMove)
+
+    return () => {
+      window.removeEventListener("mousemove", mouseMove)
+    }
+  }, [])
+
+  const variants = {
+    default: {
+      x: mousePosition.x - 12,
+      y: mousePosition.y - 12
+    }
+  }
+
   return (
     <div className="App">
       <div id="content">
@@ -27,6 +59,11 @@ export default function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
-    </div>
+      <motion.div
+        className='cursor'
+        variants={variants}
+        animate={cursorVariant}
+      ></motion.div>
+    </div >
   )
 }
