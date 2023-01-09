@@ -2,13 +2,10 @@
   display: none;
 }
 
-* {
-  cursor: none;
-}
-
 html {
   background-image: url("./components/img/black-geo.jpg");
   color: rgba(255, 255, 255, 0.8);
+  scroll-behavior: smooth !important;
 }
 
 h1 {
@@ -52,6 +49,13 @@ span {
   padding: 2vw;
 }
 
+
+/* CURSOR STUFFS */
+* {
+  cursor: none;
+  box-sizing: border-box;
+}
+
 .cursor {
   background-color: rgba(255, 255, 255, 0.8);
   height: 24px;
@@ -62,6 +66,8 @@ span {
   left: 0;
   pointer-events: none;
 }
+
+/* CURSOR STUFFS */
 
 .nav-sel {
   margin: .9vh;
@@ -149,8 +155,8 @@ span {
   display: grid;
   gap: 10px;
   column-gap: 20px;
-  grid-template-columns: 300px auto 300px;
-  grid-template-rows: 175px auto 175px;
+  grid-template-columns: 15vw auto 5vw;
+  grid-template-rows: 10vh auto 10vh;
 }
 
 #header {

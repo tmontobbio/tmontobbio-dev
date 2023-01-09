@@ -1,21 +1,26 @@
 import './App.css';
-import { motion } from 'framer-motion'
-import { useEffect, useState } from 'react'
 import Nav from './components/Nav';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Home from './components/Home';
+import { motion } from 'framer-motion'
+import { useEffect, useState } from 'react'
 import { Routes, Route } from 'react-router-dom';
 
 export default function App() {
 
+  const [cursorVariant, setCursorVariant] = useState('default')
   const [mousePosition, setMousePosition] = useState({
     x: 0,
     y: 0,
   })
-
-  const [cursorVariant, setCursorVariant] = useState('default')
+  const variants = {
+    default: {
+      x: mousePosition.x - 12,
+      y: mousePosition.y - 12
+    }
+  }
 
   useEffect(() => {
     const mouseMove = (e) => {
@@ -24,20 +29,11 @@ export default function App() {
         y: e.clientY
       })
     }
-
     window.addEventListener("mousemove", mouseMove)
-
     return () => {
       window.removeEventListener("mousemove", mouseMove)
     }
   }, [])
-
-  const variants = {
-    default: {
-      x: mousePosition.x - 12,
-      y: mousePosition.y - 12
-    }
-  }
 
   return (
     <div className="App">
@@ -48,15 +44,9 @@ export default function App() {
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
-        </Routes>
-        <Routes>
-          <Route path="/about" element={<About />} />
-        </Routes>
-        <Routes>
-          <Route path="/projects" element={<Projects />} />
-        </Routes>
-        <Routes>
-          <Route path="/contact" element={<Contact />} />
+          <Route path="about" element={<About />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="contact" element={<Contact />} />
         </Routes>
       </div>
       <motion.div
