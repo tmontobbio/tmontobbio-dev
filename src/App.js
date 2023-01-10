@@ -1,4 +1,5 @@
 import './App.css';
+import invader from "./components/img/invader.gif"
 import Nav from './components/Nav';
 import About from './components/About';
 import Projects from './components/Projects';
@@ -53,7 +54,7 @@ export default function App() {
         className='cursor'
         variants={variants}
         animate={cursorVariant}
-      ></motion.div>
+      ><img src={invader} alt="space-invader-gif" id="invader" /></motion.div>
     </div >
   )
 }
