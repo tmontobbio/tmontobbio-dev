@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Home() {
     return (
-        <div className="child" id="home">
+        <div className="center" id="home">
             hello.
         </div>
     )

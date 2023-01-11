@@ -2,10 +2,14 @@
   display: none;
 }
 
+* {
+  cursor: none;
+  box-sizing: border-box;
+  font-family: 'Rajdhani', sans-serif;
+}
+
 html {
-  /* background-image: url("./components/img/black-geo.jpg"); */
   background-image: url("./components/img/starry2.gif");
-  /* background-color: black; */
   color: rgba(255, 255, 255, 0.8);
   scroll-behavior: smooth !important;
 }
@@ -13,14 +17,12 @@ html {
 h1 {
   text-align: left;
   font-size: 3.5vw;
-  font-family: 'Rajdhani', sans-serif;
   margin: 25px 0px 0px 37px;
 }
 
 h2 {
   text-align: center;
   font-size: 2vw;
-  font-family: 'Rajdhani', sans-serif;
 }
 
 p {
@@ -53,10 +55,6 @@ span {
 
 
 /* CURSOR STUFFS */
-* {
-  cursor: none;
-  box-sizing: border-box;
-}
 
 .cursor {
   /* background-color: rgba(255, 255, 255, 0.8); */
@@ -70,12 +68,12 @@ span {
 }
 
 #invader {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   opacity: .8;
 }
 
-/* CURSOR STUFFS */
+/* END CURSOR STUFFS */
 
 .nav-sel {
   margin: .9vh;
@@ -89,7 +87,7 @@ span {
   margin: auto;
 }
 
-.child {
+.center {
   grid-row-start: 2;
   grid-row-end: 2;
   grid-column-start: 2;
@@ -142,11 +140,11 @@ span {
 
 #home {
   font-size: 20vh;
+  font-weight: 700;
 }
 
 #contact-list {
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 5vw;
+  font-size: 10vh;
 }
 
 #content {

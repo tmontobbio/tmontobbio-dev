@@ -4,7 +4,7 @@ import movieHunter from './img/movie-hunter.png'
 
 export default function Projects() {
   return (
-    <div id="projects" className="child">
+    <div id="projects" className="center">
       <a href="https://moviehunter.tmontobbio.dev/" target="_blank" rel="noreferrer">
         <img src={movieHunter} alt="movie-hunter" className="grid-item-1" />
       </a>

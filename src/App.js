@@ -10,7 +10,7 @@ import { useEffect, useState } from 'react'
 import { Routes, Route } from 'react-router-dom';
 
 export default function App() {
-
+  // eslint-disable-next-line
   const [cursorVariant, setCursorVariant] = useState('default')
   const [mousePosition, setMousePosition] = useState({
     x: 0,
@@ -18,8 +18,8 @@ export default function App() {
   })
   const variants = {
     default: {
-      x: mousePosition.x - 12,
-      y: mousePosition.y - 12
+      x: mousePosition.x - 10,
+      y: mousePosition.y - 10
     }
   }
 

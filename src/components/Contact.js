@@ -6,7 +6,7 @@ import github from "./img/github.png"
 export default function Contact() {
 
     return (
-        <div className="child">
+        <div className="center">
             <ul id="contact-list">
                 <a href="mailto:tylermontobbio@gmail.com" target="_blank" rel="noreferrer"><li><img src={gmail} alt="gmail-icon" className="contact-icon" />mail</li></a>
                 <a href="https://www.linkedin.com/in/tmontobbio" target="_blank" rel="noreferrer"><li><img src={linkedin} alt="linkedin-icon" className="contact-icon" />linkedin</li></a>
