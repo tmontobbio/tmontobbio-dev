@@ -245,8 +245,9 @@ a:link {
   }
 
   #nav {
-    width: 100px;
-    padding-top: 3vh;
+    width: 100%;
+    padding-top: .7vh;
+    margin: auto;
     grid-row-start: 1;
     grid-row-end: 1;
     grid-column-start: 1;
@@ -258,8 +259,8 @@ a:link {
   }
 
   #name {
-    -webkit-transform: rotate(-90deg);
     font-size: 3.5vw !important;
+    -webkit-transform: rotate(-90deg);
     display: none;
   }
 
@@ -283,6 +284,7 @@ a:link {
   }
 
   #header {
+    width: 100%;
     grid-row-start: 2;
     grid-row-end: 2;
     grid-column-start: 1;
