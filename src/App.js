@@ -40,7 +40,7 @@ export default function App() {
     <div className="App">
       <div id="content">
         <div id="header">
-          <h1>Tyler Montobbio</h1>
+          <h1 id="name">Tyler Montobbio</h1>
         </div>
         <Nav />
         <Routes>

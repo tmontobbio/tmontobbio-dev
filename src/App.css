@@ -48,7 +48,7 @@ a:link {
   color: rgba(255, 255, 255, 0.8);
 }
 
-span {
+.text-div {
   margin: auto;
   padding: 2vw;
 }
@@ -137,10 +137,10 @@ span {
   grid-column-end: 2;
 }
 
-
 #home {
   font-size: 20vh;
   font-weight: 700;
+  margin: auto;
 }
 
 #contact-list {
@@ -199,18 +199,108 @@ span {
   grid-template-rows: auto auto;
 }
 
-/* #cursor {
-  pointer-events: none;
+/* add "only screen and" */
+@media (max-width: 1440px) {
 
-  .cursor-circle {
+  h2 {
+    text-align: center;
+    font-size: 6vw;
+  }
+
+  li {
+    display: inline !important;
+  }
+
+  img {
+    height: auto !important;
+    width: 100% !important;
+  }
+
+  .contact-icon {
+    height: 13vw !important;
+    width: 13vw !important;
+  }
+
+  .cursor {
+    height: 48px !important;
+    width: 48px !important;
+    border-radius: 50%;
     position: fixed;
     top: 0;
     left: 0;
-    mix-blend-mode: difference;
-    z-index: 1000;
-
-    circle {
-      fill: #a18248;
-    }
+    pointer-events: none;
   }
-} */
+
+  .text {
+    font-size: 4vw;
+  }
+
+  .nav-sel {
+    font-size: 5.5vw !important;
+    margin: .9vh;
+  }
+
+  .contact-tile {
+    margin: 10vh 1vw 10vh 1vw;
+  }
+
+  #nav {
+    width: 100px;
+    padding-top: 3vh;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  #home {
+    -webkit-transform: rotate(90deg);
+  }
+
+  #name {
+    -webkit-transform: rotate(-90deg);
+    font-size: 3.5vw !important;
+    display: none;
+  }
+
+  #content {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    margin: auto;
+    padding-right: 2vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid white;
+    height: 97%;
+    width: 94%;
+    display: grid;
+    grid-template-columns: 1.25vh auto;
+    grid-template-rows: 7vh auto 1.25vh;
+    gap: 0px;
+    column-gap: 0px;
+  }
+
+  #header {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+
+  #invader {
+    width: 96px;
+    height: 96px;
+    opacity: .8;
+  }
+
+  #about,
+  #projects {
+    display: inline;
+    width: 100%;
+    align-items: center;
+    margin: auto;
+    padding: 1vh 1vw 0vh 0vw !important;
+  }
+}
