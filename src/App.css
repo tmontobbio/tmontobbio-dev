@@ -266,9 +266,14 @@ div {
   }
 
   .nav-sel {
-    font-size: 5.5vw !important;
-    font-size: calc(20px + 4vw) !important;
+    /* font-size: calc(20px + 4vw) !important; */
+    font-size: 350%;
     margin: 2.5vw;
+  }
+
+  .center {
+
+    padding-right: 1vw;
   }
 
   #nav {
