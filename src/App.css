@@ -16,18 +16,20 @@ html {
 
 h1 {
   text-align: left;
-  font-size: 3.5vw;
+  /* font-size: 3.5vw; */
+  font-size: calc(20px + 2.5vw);
   margin: 25px 0px 0px 37px;
 }
 
 h2 {
   text-align: center;
-  font-size: 2vw;
+  font-size: calc(18px + 4vw) !important;
 }
 
 p {
   text-align: center;
-  font-size: 1vw;
+  /* font-size: 1vw; */
+  font-size: calc(12px + .75vw);
 }
 
 ul {
@@ -36,6 +38,9 @@ ul {
 
 img {
   object-fit: scale-down;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 li:hover {
@@ -88,11 +93,11 @@ a:link {
 }
 
 .center {
+  padding-top: 2vh;
   grid-row-start: 2;
   grid-row-end: 2;
   grid-column-start: 2;
   grid-column-end: 2;
-  margin: auto;
 }
 
 
@@ -144,7 +149,7 @@ a:link {
 }
 
 #contact-list {
-  font-size: 10vh;
+  font-size: 8vh;
 }
 
 #content {
@@ -193,7 +198,6 @@ a:link {
 #about {
   display: grid;
   overflow-y: scroll;
-  width: 100%;
   height: 100%;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
@@ -213,12 +217,18 @@ a:link {
 
   img {
     height: auto !important;
-    width: 100% !important;
+    width: 90% !important;
+  }
+
+  .contact-tile {
+    width: 20vh;
+    margin: auto;
+    padding-top: 6vh;
   }
 
   .contact-icon {
-    height: 13vw !important;
-    width: 13vw !important;
+    height: 20vh !important;
+    width: 20vh !important;
   }
 
   .cursor {
@@ -237,11 +247,8 @@ a:link {
 
   .nav-sel {
     font-size: 5.5vw !important;
-    margin: .9vh;
-  }
-
-  .contact-tile {
-    margin: 10vh 1vw 10vh 1vw;
+    font-size: calc(20px + 4vw) !important;
+    margin: 2.5vw;
   }
 
   #nav {
@@ -299,10 +306,10 @@ a:link {
 
   #about,
   #projects {
-    display: inline;
+    display: inline-block;
     width: 100%;
     align-items: center;
     margin: auto;
-    padding: 1vh 1vw 0vh 0vw !important;
+    /* padding: 1vh 0.5vw 2vh 1vw !important; */
   }
 }
