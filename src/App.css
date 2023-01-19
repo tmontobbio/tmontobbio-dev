@@ -2,6 +2,16 @@
   display: none;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 * {
   cursor: none;
   box-sizing: border-box;
@@ -24,12 +34,14 @@ h1 {
 h2 {
   text-align: center;
   font-size: calc(18px + 4vw) !important;
+  animation: fadeIn 7s;
 }
 
 p {
   text-align: center;
-  /* font-size: 1vw; */
   font-size: calc(12px + .75vw);
+  transition-delay: 1s;
+  animation: fadeIn 5s;
 }
 
 ul {
@@ -41,6 +53,7 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  animation: fadeIn 3s;
 }
 
 li:hover {
@@ -102,8 +115,9 @@ a:link {
 
 
 .contact-icon {
-  height: 4vw;
-  width: 4vh;
+  height: 10vw;
+  width: 10vh;
+  margin-top: 4vh;
 }
 
 .grid-item-1 {
@@ -146,6 +160,7 @@ a:link {
   font-size: 20vh;
   font-weight: 700;
   margin: auto;
+  animation: fadeIn 10s;
 }
 
 #contact-list {
@@ -223,7 +238,7 @@ a:link {
   .contact-tile {
     width: 20vh;
     margin: auto;
-    padding-top: 6vh;
+    padding-top: 3vh;
   }
 
   .contact-icon {
