@@ -8,7 +8,7 @@
   }
 
   100% {
-    opacity: 1;
+    opacity: .8;
   }
 }
 
@@ -26,7 +26,6 @@ html {
 
 h1 {
   text-align: left;
-  /* font-size: 3.5vw; */
   font-size: calc(20px + 2.5vw);
   margin: 25px 0px 0px 37px;
 }
@@ -40,7 +39,6 @@ h2 {
 p {
   text-align: center;
   font-size: calc(12px + .75vw);
-  transition-delay: 1s;
   animation: fadeIn 5s;
 }
 
@@ -164,7 +162,7 @@ div {
   font-size: 20vh;
   font-weight: 700;
   margin: auto;
-  animation: fadeIn 10s;
+  animation: fadeIn 8s;
 }
 
 #contact-list {
@@ -185,7 +183,7 @@ div {
   display: grid;
   gap: 10px;
   column-gap: 20px;
-  grid-template-columns: 15vw auto 5vw;
+  grid-template-columns: 11vw auto 5vw;
   grid-template-rows: 10vh auto 10vh;
 }
 
@@ -267,17 +265,15 @@ div {
 
   .nav-sel {
     /* font-size: calc(20px + 4vw) !important; */
-    font-size: 350%;
+    font-size: 2rem;
     margin: 2.5vw;
   }
 
   .center {
-
     padding-right: 1vw;
   }
 
   #nav {
-    width: 100%;
     padding-top: .7vh;
     margin: auto;
     grid-row-start: 1;
