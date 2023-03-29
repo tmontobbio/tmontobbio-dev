@@ -264,7 +264,7 @@ div {
 
   .nav-sel {
     /* font-size: calc(20px + 4vw) !important; */
-    font-size: 2rem;
+    font-size: 3em;
     margin: 2.5vw;
   }
 
@@ -333,5 +333,76 @@ div {
     align-items: center;
     margin: auto;
     /* padding: 1vh 0.5vw 2vh 1vw !important; */
+  }
+}
+
+
+/* GAME CSS */
+#game-container {
+  display: inline-flex;
+}
+
+#game-container button {
+  height: 50%;
+}
+
+#button-container {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+#game {
+  width: 500px;
+  height: 200px;
+  background-color: white;
+}
+
+#character {
+  width: 20px;
+  height: 50px;
+  background-color: red;
+  position: relative;
+  top: 150px;
+}
+
+.animate-jump {
+  animation: jump 500ms infinite;
+}
+
+@keyframes jump {
+  0% {
+    top: 150px;
+  }
+
+  30% {
+    top: 100px;
+  }
+
+  70% {
+    top: 100px;
+  }
+
+  100% {
+    top: 150px;
+  }
+}
+
+#block {
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  position: relative;
+  top: 130px;
+  left: 480px;
+  animation: block 1.5s infinite linear;
+}
+
+@keyframes block {
+  0% {
+    left: 480px;
+  }
+
+  100% {
+    left: -40px;
   }
 }
