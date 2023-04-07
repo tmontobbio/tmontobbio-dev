@@ -225,7 +225,7 @@ div {
 
 
 /* add "only screen and" */
-@media only screen and (max-width: 1440px) {
+@media screen and (max-width: 1440px) {
 
 
   h2 {
@@ -276,6 +276,8 @@ div {
     font-size: 3em;
     margin: 2.5vw;
   }
+
+  .center {}
 
   #nav {
     padding-top: .7vh;
