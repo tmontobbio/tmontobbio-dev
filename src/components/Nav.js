@@ -6,7 +6,7 @@ export default function Nav() {
   const linkStyle = ({ isActive }) => {
     return {
       fontWeight: isActive ? 'bold' : 'normal',
-      fontSize: isActive ? '30px' : '20px',
+      fontSize: isActive ? '3ch' : '2.5ch',
       // textDecoration: isActive ? 'underline' : 'none',
     }
   }

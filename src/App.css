@@ -220,6 +220,10 @@ div {
   grid-template-rows: auto auto;
 }
 
+
+
+
+
 /* add "only screen and" */
 @media only screen and (max-width: 1440px) {
 
@@ -236,6 +240,11 @@ div {
   img {
     height: auto !important;
     width: 90% !important;
+  }
+
+  ul {
+    padding: 0;
+    text-align: center;
   }
 
   .contact-tile {
@@ -268,22 +277,22 @@ div {
     margin: 2.5vw;
   }
 
-  .center {
-    padding-right: 1vw;
-  }
-
   #nav {
     padding-top: .7vh;
-    margin: auto;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    width: 95%;
+    height: 10vh;
+    max-height: 100px;
+    z-index: 10;
+  }
+
+  .nav-sel {
+    font-size: 3ch;
   }
 
   #home {
     -webkit-transform: rotate(90deg);
-    font-size: 30vw !important;
+    font-size: 15ch;
+    margin: 0 !important;
     padding: 0 !important;
   }
 
@@ -295,29 +304,18 @@ div {
 
   #content {
     background-color: rgba(0, 0, 0, 0.8);
-    position: absolute;
-    margin: auto;
-    padding-right: 1vw;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     border: 1px solid white;
-    height: 97%;
-    width: 94%;
-    display: grid;
-    grid-template-columns: 1.25vh auto;
-    grid-template-rows: 7vh auto 1.25vh;
+    height: 94%;
+    margin: 4%;
+    display: flex;
     gap: 0px;
-    column-gap: 0px;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
   }
 
   #header {
     width: 100%;
-    grid-row-start: 2;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 1;
   }
 
   #invader {
@@ -333,76 +331,5 @@ div {
     align-items: center;
     margin: auto;
     /* padding: 1vh 0.5vw 2vh 1vw !important; */
-  }
-}
-
-
-/* GAME CSS */
-#game-container {
-  display: inline-flex;
-}
-
-#game-container button {
-  height: 50%;
-}
-
-#button-container {
-  display: inline-flex;
-  flex-direction: column;
-}
-
-#game {
-  width: 500px;
-  height: 200px;
-  background-color: white;
-}
-
-#character {
-  width: 20px;
-  height: 50px;
-  background-color: red;
-  position: relative;
-  top: 150px;
-}
-
-.animate-jump {
-  animation: jump 500ms infinite;
-}
-
-@keyframes jump {
-  0% {
-    top: 150px;
-  }
-
-  30% {
-    top: 100px;
-  }
-
-  70% {
-    top: 100px;
-  }
-
-  100% {
-    top: 150px;
-  }
-}
-
-#block {
-  width: 20px;
-  height: 20px;
-  background-color: blue;
-  position: relative;
-  top: 130px;
-  left: 480px;
-  animation: block 1.5s infinite linear;
-}
-
-@keyframes block {
-  0% {
-    left: 480px;
-  }
-
-  100% {
-    left: -40px;
   }
 }

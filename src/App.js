@@ -54,7 +54,9 @@ export default function App() {
         className='cursor'
         variants={variants}
         animate={cursorVariant}
-      ><img src={invader} alt="space-invader-gif" id="invader" /></motion.div>
+      >
+        <img src={invader} alt="space-invader-gif" id="invader" />
+      </motion.div>
     </div >
   )
 }

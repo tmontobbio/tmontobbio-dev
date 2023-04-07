@@ -2,35 +2,8 @@ import React from "react";
 import dogIM from './img/dogim.jpg'
 import movieHunter from './img/movie-hunter.png'
 import julianc from "./img/julianc-logo.png"
-import { useState } from "react";
 
 export default function Projects() {
-	var char = document.getElementById("character")
-	var block = document.getElementById("block")
-	const [isJumping, setIsJumping] = useState(false)
-	const [gameStart, setGameStart] = useState(false)
-
-
-
-	// setInterval(function () {
-	// 	debugger;
-	// 	let charTop = parseInt(window.getComputedStyle(char).getPropertyValue("top"))
-	// 	let blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"))
-
-	// 	if (gameStart === true && blockLeft < 20 && blockLeft > 0 && charTop >= 130) {
-	// 		debugger
-	// 		setGameStart(false)
-	// 		console.log("u lose!")
-	// 	}
-	// }, 10)
-
-
-	function jump() {
-		isJumping ? console.log("already jumping") : setIsJumping(true)
-		setTimeout(() => {
-			setIsJumping(false)
-		}, 500)
-	}
 
 	return (
 		<div id="projects" className="center">
@@ -73,20 +46,6 @@ export default function Projects() {
 					A web app build on React.js & Rails frameworks.  Dog IM was a project that enabled me to demonstrate my ability to create a my own API and PostgreSQL database.  As a huge dog lover, I decided to take the average chat app and put a little dog-based twist on it - "Dog IM - an instant messenger for pups!".  Future updates will include web-sockets for real-time messanging, currently this site acts as a forum, where users must refresh the page for new messages.
 				</p>
 			</span>
-			<div id="game-container">
-				<div id="game">
-					<div id="character" className={isJumping ? "animate-jump" : ""}>
-
-					</div>
-					<div id={gameStart ? "block" : ""}>
-
-					</div>
-				</div>
-				<div id="button-container">
-					<button id="start-btn" onClick={() => setGameStart(!gameStart)}>Start</button>
-					<button id="jump-btn" onClick={jump}>Jump!</button>
-				</div>
-			</div>
 		</div>
 	)
 }
